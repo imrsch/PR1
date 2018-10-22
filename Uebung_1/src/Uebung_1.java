@@ -47,6 +47,7 @@ public class Uebung_1 {
 		
 		//Calculation Euros to Dollars
 		dbl_dollar =  (dbl_euro*dbl_exchangerate);
+		dbl_dollar = Math.round(dbl_dollar*100)/100.00;
 		
 		//Output Dollars
 		System.out.println("Dollar: " +dbl_dollar);
@@ -59,6 +60,9 @@ public class Uebung_1 {
 			
 		//Calculation Dollars to Euros
 		dbl_euro =  dbl_dollar/dbl_exchangerate;
+		dbl_euro = Math.round(dbl_euro*100)/100.00;
+		
+		//Output Euros
 		System.out.println("Euro: " +dbl_euro);
 		}
 		//Do-while until an accepted input is made
